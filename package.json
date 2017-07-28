@@ -1,0 +1,23 @@
+{
+  "name": "gql-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "graphql": "^0.10.3",
+    "graphql-server-hapi": "^1.0.0",
+    "graphql-tools": "^1.1.0",
+    "hapi": "^16.4.3",
+    "lodash": "^4.17.4",
+    "sequelize": "^4.3.2",
+    "tedious": "^2.0.0"
+  },
+  "devDependencies": {
+    "rollup-plugin-node-resolve": "^3.0.0"
+  }
+}
