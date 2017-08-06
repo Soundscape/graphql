@@ -14,6 +14,7 @@
     "graphql-tools": "^1.1.0",
     "hapi": "^16.4.3",
     "lodash": "^4.17.4",
+    "mysql2": "^1.4.0",
     "sequelize": "^4.3.2",
     "tedious": "^2.0.0"
   },

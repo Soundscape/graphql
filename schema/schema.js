@@ -5,6 +5,7 @@ const resolvers = require('./resolvers')
 const Post = require('./post')
 const Film = require('./film')
 const Showtime = require('./showtime')
+const CinemaChain = require('./cinemachain')
 
 const Query = `
     type Query {
@@ -12,6 +13,9 @@ const Query = `
         showtimes(limit: Int!, offset: Int!): [Showtime]
         # Retrieve all films
         films(limit: Int!, offset: Int!): [Film]
+        # Retrieve all cinema chains
+        cinemachains(limit: Int!, offset: Int!): [CinemaChain]
+
         # Retrieve all posts
         posts: [Post]
         # Retrieve a post by its ID
@@ -32,7 +36,7 @@ const SchemaDefinition = `
 module.exports = tools.makeExecutableSchema({
     typeDefs: [
         SchemaDefinition, Query,
-        ...Post, Film, Showtime
+        ...Post, CinemaChain, Film, Showtime
     ],
     resolvers: resolvers
 })
