@@ -5,7 +5,7 @@ const myGraphqlSchema = require('./schema/schema')
 
 const server = new hapi.Server()
 
-const HOST = 'localhost'
+const HOST = '0.0.0.0'
 const PORT = 3000
 
 server.connection({

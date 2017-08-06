@@ -1,3 +1,10 @@
+# docker build and run
+
+$ docker build -t graphql .
+
+$ docker run -p3000:3000 graphql
+
+
 # graphql run and start
 
 npm install
