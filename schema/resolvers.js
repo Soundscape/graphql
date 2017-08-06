@@ -1,4 +1,5 @@
 const _ = require('lodash');
+
 // example data
 const authors = [
   { id: 1, firstName: 'Tom', lastName: 'Coleman' },
@@ -18,6 +19,7 @@ const resolvers = {
   Query: {
     showtimes: (obj, { limit, offest }) => connectors.Showtimes.findAll({ offset: offest, limit: limit }),
     films: (obj, { limit, offest }) => connectors.Films.findAll({ offset: offest, limit: limit }),
+    cinemachains: (obj, { limit, offest }) => connectors.CinemaChains.findAll({ offset: offest, limit: limit }),
     posts: () => posts,
     post: (obj, { id }) => _.find(posts, { id: id }),
     authors: () => authors,
