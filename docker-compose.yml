@@ -1,0 +1,11 @@
+version: '2'
+services:
+  graphqlapp:
+    build: .
+    environment:
+      DB_HOST: localhost
+      DB_USER: root
+      DB_PASS: masterkey
+      DB_SCHEMA: gtp
+      DB_DIALECT: mysql
+
