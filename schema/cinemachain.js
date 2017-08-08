@@ -2,7 +2,10 @@ const CinemaChain = `
     type CinemaChain {
         # The cinema chain's ID
         id: String!
-        name: String!
+        # The cinema chain's name
+        name: String!,
+        # The cinema chain's sites
+        sites: [Site]
     }
 `
 
