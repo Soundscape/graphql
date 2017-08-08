@@ -13,7 +13,8 @@ const resolvers = {
     sites: (cinemaChain) => connectors.Sites.findAll({ cinemaChainId: cinemaChain.id })
   },
   Site: {
-    cinemaChain: (site) => connectors.CinemaChains.findById(post.cinemaChainId)
+    cinemaChain: (site) => connectors.CinemaChains.findById(post.cinemaChainId),
+    showtimes: (site) => connectors.Showtimes.findAll({ cinemaChainId: site.cinemaChainId, siteId: site.id })
   }
 };
 

@@ -8,6 +8,8 @@ const Site = `
         timezone: String!
         # The site's cinema chain
         cinemaChain: CinemaChain!
+        # The site's showtimes
+        showtimes: [Showtime]
     }
 `
 
