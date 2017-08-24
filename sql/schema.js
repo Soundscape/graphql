@@ -13,6 +13,9 @@ const FilmModel = db.define('film', {
 })
 
 const ShowtimeModel = db.define('showtime', {
+    starttime: { type: Sequelize.STRING },
+    cinemaChainId: { type: Sequelize.STRING },
+    siteId: { type: Sequelize.STRING },
 }, {
     timestamps: false,
     freezeTableName: true,
@@ -30,6 +33,7 @@ const CinemaChainModel = db.define('cinemaChain', {
 const SiteModel = db.define('site', {
     name: { type: Sequelize.STRING },
     timezone: { type: Sequelize.STRING, field: 'timezoneId' },
+    cinemaChainId: { type: Sequelize.STRING },
 }, {
     timestamps: false,
     freezeTableName: true,
